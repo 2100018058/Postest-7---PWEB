@@ -1,0 +1,60 @@
+<HTML>
+<HEAD><TITLE>Latihan Percabangan JavaScript</TITLE></HEAD>
+<BODY>
+	<SCRIPT LANGUAGE="JavaScript">
+		function warna(pilihan){
+			var nama = (document.fform.inama.value);
+	var tujuan = (document.fform.itujuan.value);
+	var Fakultas = (document.fform.ijumlah.value);
+	var Prodi = (document.fform.imember.value);
+	var Angkatan = (document.fform.angkatan.value);
+	document.bgcolor=pilihan;
+	document.fform.otiket.value=nama;
+	document.fform.osub.value=tujuan;
+	document.fform.odiskon.value=Fakultas;
+	document.fform.ototal.value=Prodi;
+	document.fform.angkatan1.value=Angkatan;
+	var jk=tujuan%2;
+		if(jk==0){
+
+		document.bgColor=pilihan;
+		}
+		else{
+			document.bgColor='black';
+		}
+		
+		}
+	</SCRIPT>
+
+	<FORM NAME ="fform">
+		<table border="1" align="center"width="70%">
+			<tr>
+			<td width="100%" colspan="2"><H2 ALIGN="center">Jasa Kiriman
+			Paket</H2></td>
+			</tr>
+			<tr>
+			<td width="50%"><PRE>
+			Nama 	:	<input type="text" size="20" name="inama">
+			NIM 	:	<input type="text" size="20" name="itujuan"> 
+			Fakultas 	:<input type="text" size="11" name="ijumlah">
+			Prodi 		:<input type="text" name="imember">
+			Angkatan	:<input type="text" name="angkatan"></td>
+			</pre>
+			<td width="50%"><pre>
+			Nama 	:<input type="text" size="10" name="otiket"> 
+			NIM 	:<input type="text" size="10" name="osub"> 
+			Fakultas :<input type="text" size="10" name="odiskon">
+			Prodi 	:<input type="text" size="10" name="ototal">
+			Angkatan : <input type="text" size="10" name="angkatan1"></td><pre>
+			</tr>
+			<tr>
+			<td width="100%" colspan="2">
+			<center>
+			<INPUT TYPE="button" value="cetak" onclick="warna('pink')">
+			<INPUT TYPE="reset" value="Ulang">
+			</center></td>
+			</tr>
+		</table>
+	</FORM>
+</BODY>
+</HTML>
