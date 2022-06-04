@@ -34,8 +34,8 @@
 			</tr>
 			<tr>
 			<td width="50%"><PRE>
-			Nama 	:	<input type="text" size="20" name="inama">
-			NIM 	:	<input type="text" size="20" name="itujuan"> 
+			Nama 		:<input type="text" size="20" name="inama">
+			NIM 		:<input type="text" size="20" name="itujuan"> 
 			Fakultas 	:<input type="text" size="11" name="ijumlah">
 			Prodi 		:<input type="text" name="imember">
 			Angkatan	:<input type="text" name="angkatan"></td>
